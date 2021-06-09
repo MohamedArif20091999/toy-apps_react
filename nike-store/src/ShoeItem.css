@@ -1,0 +1,29 @@
+.shoe-img  {
+    max-width: 290px !important;
+    max-height:  290px !important;
+}
+.shoe-item{
+    margin-top: 32px !important;
+    /* padding: 16px !important; */
+    margin-bottom: 32px !important;
+
+}
+.shoe-content{
+    text-align: center;
+}
+.btn {
+    margin: 16px 0px !important;
+    text-align: center !important;
+}
+.zoom {
+    padding: 0 20px;
+    transition: transform .2s;
+  }
+.zoom:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+    cursor: pointer;
+  }
