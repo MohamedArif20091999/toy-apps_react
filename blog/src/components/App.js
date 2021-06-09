@@ -13,10 +13,14 @@ const App = () => {
 
   const renderPosts = posts.map((post) => {
     return (
-      <React.Fragment key={post.title}>
-        <div className="card">{post.title}</div>
-        <div className="content">{post.content}</div>
-      </React.Fragment>
+      <div className="ui cards">
+        <div key="post.title" class="card">
+          <div class="content">
+            <div class="header">User Name</div>
+            <div class="description">{post.body}</div>
+          </div>
+        </div>
+      </div>
     );
   });
 
