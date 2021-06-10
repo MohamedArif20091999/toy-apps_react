@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchPosts } from "../actions";
+import "./postList.css";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -13,11 +14,11 @@ const App = () => {
 
   const renderPosts = posts.map((post) => {
     return (
-      <div className="ui cards">
+      <div className="ui cards one wide column">
         <div key="post.title" class="card">
-          <div class="content">
-            <div class="header">User Name</div>
-            <div class="description">{post.body}</div>
+          <div className="content">
+            <div className="header">User Name</div>
+            <div className="description">{post.body}</div>
           </div>
         </div>
       </div>
@@ -25,8 +26,10 @@ const App = () => {
   });
 
   return (
-    <div>
-      <h1 className="post_heading">Posts</h1>
+    <div className="main ui grid">
+      <h1 className="post_heading">
+        An overkill application with redux,thunk etc...
+      </h1>
       <div>{renderPosts}</div>
     </div>
   );
